@@ -232,7 +232,8 @@ function fn_overlapped(){
 									<option value="freechal.com">freechal.com</option>
 							</select>
 							<br> <br> 
-							<input type="checkbox" name="emailsts_yn" value="Y" checked /> 쇼핑몰에서 발송하는 e-mail을 수신합니다.</td>
+							<input type="checkbox" name="emailsts_yn" value="Y" checked /> 쇼핑몰에서 발송하는 e-mail을 수신합니다.
+					</td>
 				</tr>
 				<tr class="dot_line">
 					<td class="fixed_join">주소</td>

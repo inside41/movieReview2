@@ -127,9 +127,17 @@ public class MemberControllerImpl extends BaseController implements MemberContro
 	}
 	
 	@Override
-	public ModelAndView searchMember(Map<String, String> loginMap, HttpServletRequest request, HttpServletResponse response)
-			throws Exception {
-		return null;
+	@RequestMapping(value="/searchMember.do" ,method = RequestMethod.POST)
+	public ModelAndView searchMember(@ModelAttribute("memberVO") MemberVO _memberVO , HttpServletRequest request, HttpServletResponse response) throws Exception {
+		ModelAndView mav = new ModelAndView();
+		String searchValue = request.getParameter("searchValue");
+		if(searchValue.equals("idc")) {
+			mav.addObject("memberVO",memberService.searchMemberID(_memberVO));
+		}else {
+			mav.addObject("memberVO",memberService.searchMemberPW(_memberVO));
+		}
+		mav.setViewName("redirect:/member/searchForm?searchValue=" + searchValue);
+		return mav;
 	}
 	
 }

@@ -35,4 +35,14 @@ public class MemberServiceImpl implements MemberService {
 	public String overlapped(String id) throws Exception{
 		return memberDAO.selectOverlappedID(id);
 	}
+	
+	@Override
+	public String searchMemberID(MemberVO memberVO) throws Exception {
+		return memberDAO.selectMemberID(memberVO);
+	}
+	
+	@Override
+	public MemberVO searchMemberPW(MemberVO memberVO) throws Exception {
+		return memberDAO.selectMemberPW(memberVO);
+	}
 }

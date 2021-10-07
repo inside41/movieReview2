@@ -11,4 +11,6 @@ public interface MemberDAO {
 	public String selectSalt(String id) throws DataAccessException;
 	public void insertNewMember(MemberVO memberVO) throws DataAccessException;
 	public String selectOverlappedID(String id) throws DataAccessException;
+	public String selectMemberID(MemberVO memberVO) throws DataAccessException;
+	public MemberVO selectMemberPW(MemberVO memberVO) throws DataAccessException;
 }
