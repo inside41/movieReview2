@@ -2,6 +2,8 @@
 	pageEncoding="utf-8" 
 	isELIgnored="false"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <c:set var="contextPath" value="${pageContext.request.contextPath}" />
 <!DOCTYPE html >
 <html>
@@ -14,10 +16,23 @@
 		}
 
 		function result() {
-			alert("아이디나  비밀번호가 틀립니다. 다시 로그인해주세요");
+			alert("입력하신 정보가 존재하지 않습니다. 다시 시도해 주세요.");
 		}
 	</script>
 </c:if>
+<script>
+	function selectEmail(){
+		var email2Select = document.getElementById("email2Select");
+		var email2Text = document.getElementById("email2Text");
+		var selectValue = email2Select.options[email2Select.selectedIndex].value; 
+		if(selectValue != ""){
+			email2Text.value = "";
+			email2Text.disabled = true;
+		}else{
+			email2Text.disabled = false;
+		}
+	}
+</script>
 </head>
 <body>
 	<c:choose>
@@ -36,17 +51,17 @@
 						<c:if test='${(param.searchValue=="pw")}'>
 							<TR class="dot_line">
 								<TD class="fixed_join">아이디</TD>
-								<TD><input name="member_id" type="text" size="20" /></TD>
+								<TD><input name="member_id" type="text" size="20" required/></TD>
 							</TR>
 							<TR class="dot_line">
 								<TD class="fixed_join">이름</TD>
-								<TD><input name="member_name" type="text" size="20" /></TD>
+								<TD><input name="member_name" type="text" size="20" required/></TD>
 							</TR>
 						</c:if>
 						<TR class="solid_line">
 							<td class="fixed_join">이메일<br>(e-mail)</td>
-							<td><input size="10px"   type="text" name="email1" /> @ <input  size="10px"  type="text"name="email2" /> 
-							  <select name="email2" onChange=""	title="직접입력">
+							<td><input size="10px" type="text" name="email1" required/> @ <input id="email2Text" size="10px"  type="text" name="email2" required/> 
+							  <select id="email2Select" name="email2" onChange="selectEmail()"	title="직접입력" >
 										<option value="">직접입력</option>
 										<option value="hanmail.net">hanmail.net</option>
 										<option value="naver.com">naver.com</option>
@@ -65,29 +80,19 @@
 						<TR>
 							<c:choose>
 								<c:when test='${(param.searchValue=="id")}'>
-									<TD><INPUT type="submit" value="아이디 찾기" action="${contextPath}/member/searchMember.do?searchValue=idc"></TD>
+									<TD><INPUT type="submit" value="아이디 찾기" formaction="${contextPath}/member/searchMember.do?searchValue=idc"></TD>
 								</c:when>
 								<c:otherwise>
-									<TD><INPUT type="submit" value="비밀번호 찾기" action="${contextPath}/member/searchMember.do?searchValue=pwc"></TD>
+									<TD><INPUT type="submit" value="비밀번호 찾기" formaction="${contextPath}/member/searchMember.do?searchValue=pwc"></TD>
 								</c:otherwise>
 							</c:choose>
 						</TR>
 					</c:if>
 					<c:choose>
-							<c:when test='${(param.searchValue=="idc")}'>
+							<c:when test='${(searchValue=="idc")}'>
 								<TR>
 									<TD class="">아이디</TD>
-									<TD class="">${memberVO.member_id}</TD>
-								</TR>
-							</c:when>
-							<c:when test='${(param.searchValue=="pwc")}'>
-								<TR>
-									<TD class="">아이디</TD>
-									<TD class="">${memberVO.member_id}</TD>
-								</TR>
-								<TR>
-									<TD class="">비밀번호</TD>
-									<TD class="">${memberVO.member_pw}</TD>
+									<TD>${member_id}</TD>
 								</TR>
 							</c:when>
 					</c:choose>

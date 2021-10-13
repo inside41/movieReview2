@@ -1,5 +1,6 @@
 package com.bookshop01.member.service;
 
+import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,12 +38,17 @@ public class MemberServiceImpl implements MemberService {
 	}
 	
 	@Override
-	public String searchMemberID(MemberVO memberVO) throws Exception {
+	public MemberVO searchMemberID(MemberVO memberVO) throws Exception {
 		return memberDAO.selectMemberID(memberVO);
 	}
 	
 	@Override
 	public MemberVO searchMemberPW(MemberVO memberVO) throws Exception {
 		return memberDAO.selectMemberPW(memberVO);
+	}
+	
+	@Override
+	public MemberVO changeMemberPW(MemberVO memberVO) throws Exception {
+		return memberDAO.updateMemberPW(memberVO);
 	}
 }

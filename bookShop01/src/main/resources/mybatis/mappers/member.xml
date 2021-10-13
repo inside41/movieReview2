@@ -5,7 +5,7 @@
 
 <mapper namespace="mapper.member">
 <!-- 리절트 맵 정의 -->	
-	<resultMap id="memberResult" type="MemberVO">
+<!-- 	<resultMap id="memberResult" type="MemberVO">
 		<result property="member_id" column="member_id" />
 		<result property="member_pw" column="member_pw" />
 		<result property="member_name" column="member_name" />
@@ -33,7 +33,7 @@
 		<result property="jibunAddress" column="jibunAddress" />
 		<result property="namujiAddress" column="namujiAddress" />
 		<result property="joinDate" column="joinDate" />
-	</resultMap>	
+	</resultMap>	 -->
 
 	<select id="login" resultType="memberVO"  parameterType="java.util.Map"  >
 	    <![CDATA[
@@ -50,20 +50,34 @@
 			 where member_id=#{member_id}
 		]]>
 	</select>
-	<select id="selectMemberID" resultType="String"  parameterType="memberVO"  >
+	
+	<select id="selectMemberID" resultType="memberVO"  parameterType="memberVO"  >
 	    <![CDATA[
-			SELECT member_id FROM t_shopping_member 
+			SELECT * FROM t_shopping_member 
 			 WHERE email1=#{email1} AND email2=#{email2}
 		]]>
 	</select>
+	
 	<select id="selectMemberPW" resultType="memberVO"  parameterType="memberVO"  >
 	    <![CDATA[
-			SELECT member_id,member_pw FROM t_shopping_member 
+			SELECT * FROM t_shopping_member 
 			 WHERE member_id = #{member_id}
 			 AND member_name = #{member_name}
 			 AND email1=#{email1} AND email2=#{email2}
 		]]>
 	</select>
+	
+	<update id="updateMemberPW"  parameterType="memberVO"  >
+	    <![CDATA[
+		 UPDATE t_shopping_member 
+		 	SET member_pw = #{member_pw}
+		 	, 	salt = #{salt} 
+		  WHERE member_id = #{member_id} 
+			AND member_name = #{member_name} 
+			AND email1 = #{email1} 
+			AND email2 = #{email2} 
+		]]>
+	</update>
 	
 	<select id="selectOverlappedID" parameterType="String" resultType="String">
 	   select decode(count(*),1, 'true', 0, 'false')

@@ -1,5 +1,8 @@
 package com.bookshop01.mypage.vo;
 
+import org.springframework.stereotype.Component;
+
+@Component("mypageVO")
 public class MyPageVO {
 	private String member_id;
 	private String beginDate;

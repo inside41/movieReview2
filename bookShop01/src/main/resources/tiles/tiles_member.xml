@@ -17,6 +17,11 @@
          <put-attribute name="title" value="아이디 찾기 페이지" />
          <put-attribute name="body" value="/WEB-INF/views/member/searchForm.jsp" />
       </definition>
+      
+      <definition name="/member/changeForm" extends="baseLayout">
+         <put-attribute name="title" value="비밀번호 변경 페이지" />
+         <put-attribute name="body" value="/WEB-INF/views/member/changeForm.jsp" />
+      </definition>
   
 </tiles-definitions>
 
