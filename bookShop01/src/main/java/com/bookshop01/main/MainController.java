@@ -24,17 +24,27 @@ public class MainController extends BaseController {
 	@Autowired
 	private GoodsService goodsService;
 
+//	@RequestMapping(value= "/main/main.do" ,method={RequestMethod.POST,RequestMethod.GET})
+//	public ModelAndView main(HttpServletRequest request, HttpServletResponse response) throws Exception{
+//		HttpSession session;
+//		ModelAndView mav=new ModelAndView();
+//		String viewName=(String)request.getAttribute("viewName");
+//		mav.setViewName(viewName);
+//		
+//		session=request.getSession();
+//		session.setAttribute("side_menu", "user");
+//		Map<String,List<GoodsVO>> goodsMap=goodsService.listGoods();
+//		mav.addObject("goodsMap", goodsMap);
+//		return mav;
+//	}
+	
 	@RequestMapping(value= "/main/main.do" ,method={RequestMethod.POST,RequestMethod.GET})
-	public ModelAndView main(HttpServletRequest request, HttpServletResponse response) throws Exception{
+	public ModelAndView movie(HttpServletRequest request, HttpServletResponse response) throws Exception{
 		HttpSession session;
-		ModelAndView mav=new ModelAndView();
-		String viewName=(String)request.getAttribute("viewName");
-		mav.setViewName(viewName);
-		
 		session=request.getSession();
 		session.setAttribute("side_menu", "user");
-		Map<String,List<GoodsVO>> goodsMap=goodsService.listGoods();
-		mav.addObject("goodsMap", goodsMap);
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("/main/main");
 		return mav;
 	}
 }

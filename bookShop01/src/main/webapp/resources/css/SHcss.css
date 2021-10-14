@@ -1,0 +1,556 @@
+.slider{
+    position: relative;
+    width: 50%;
+    height: 120%;
+    left: 0%;
+    top: -40px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.slider input[type=radio]{
+    display: none;
+}
+
+
+
+
+.naver{
+    position: relative;
+    width: 48%;
+    float: right;
+    height: 120%;
+    top: -40px;
+    border-radius: 10px;
+}
+
+.minititle1{
+    position: relative;
+    left: auto;
+}
+
+.minititle2{
+    position: relative;
+    right: -465px;
+    top: -40px;
+}
+
+.chaeyoung {
+
+}
+
+
+ul.imgs{
+    padding: 0;
+    margin: 0;
+
+}
+ul.imgs li{
+    position: absolute;
+    left: 640px;
+    transition-delay: 0.5s;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    
+}
+
+.bullets{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    z-index: 2;
+}
+.bullets label{
+    display: inline-block;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.55);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.slider input[type=radio]:nth-child(1):checked~.bullets>label:nth-child(1){
+    background-color: #fff;
+}
+.slider input[type=radio]:nth-child(2):checked~.bullets>label:nth-child(2){
+    background-color: #fff;
+}
+.slider input[type=radio]:nth-child(3):checked~.bullets>label:nth-child(3){
+    background-color: #fff;
+}
+.slider input[type=radio]:nth-child(4):checked~.bullets>label:nth-child(4){
+    background-color: #fff;
+}
+
+.slider input[type=radio]:nth-child(1):checked~ul.imgs>li:nth-child(1){
+    left: 0;
+    transition: 0.5s;
+    z-index:1;
+}
+.slider input[type=radio]:nth-child(2):checked~ul.imgs>li:nth-child(2){
+    left: 0;
+    transition: 0.5s;
+    z-index:1;
+}
+.slider input[type=radio]:nth-child(3):checked~ul.imgs>li:nth-child(3){
+    left: 0;
+    transition: 0.5s;
+    z-index:1;
+}
+.slider input[type=radio]:nth-child(4):checked~ul.imgs>li:nth-child(4){
+    left: 0;
+    transition: 0.5s;
+    z-index:1;
+}
+
+.diamond{
+    position: relative;
+    float: right;
+}
+
+.news{
+    width: 49.5%;
+    position: relative;
+    float: left;
+    border-radius: 20%;
+}
+
+.news2{
+   
+    width: 49.5%;
+    position: relative;
+    float: right;
+}
+
+.news2p {
+    text-decoration-line: none;
+    color: black;
+}
+
+.news img {
+    height: 100%;
+    width: 100%;
+}
+
+.newshead{
+    background-color: white;
+	padding: 20px;
+	margin-top: 20px;
+    height: 430px;
+    
+}
+
+.trailer{
+    display: flex;
+    height: 400px;
+    padding: 10px;
+    margin : auto;
+    position: relative;
+    top: 20px;
+    background-color: white;
+    width: 100%;
+}
+
+button {
+    height: 2.5em;
+    cursor: pointer;
+  }
+  
+  #venompopup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    z-index: 1;
+  }
+  
+  #venompopup.venomhide {
+    display: none;
+  }
+  
+  #venompopup.has-filter {
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+  
+  #venompopup .venomcontent {
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+  }
+
+  #popup .content {
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+  }
+
+
+
+  .venomplay {
+      position: absolute;
+      top: 185px;
+      left: 90px;
+      font-size: 60px;
+      color: white;
+    
+  }
+
+  .venom{
+    width: 200px;
+    height: 310px;
+  }
+
+
+figure.venomzoom {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  max-width: 200px;
+  max-height: 320px;
+
+}
+
+figure.venomzoom * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+}
+
+figure.venomzoom:hover img,
+figure.venomzoom.hover img {
+  opacity: 0.35;
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+}
+
+
+/* <!-- 베놈끝 --> */
+
+.doubleoplay {
+    position: absolute;
+    top: 185px;
+    left: 90px;
+    font-size: 60px;
+    color: white;
+  
+}
+
+
+figure.doubleozoom {
+position: relative;
+overflow: hidden;
+margin: 10px;
+max-width: 200px;
+max-height: 320px;
+
+}
+
+figure.doubleozoom * {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+-webkit-transition: all 0.45s ease-in-out;
+transition: all 0.45s ease-in-out;
+}
+
+figure.doubleozoom:hover img,
+figure.doubleozoom.hover img {
+opacity: 0.35;
+-webkit-transform: scale(1.15);
+transform: scale(1.15);
+}
+
+.doubleo{
+    width: 200px;
+    height: 310px;
+}
+
+/* 여기서부터 007 팝업 */
+
+#doubleopopup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    z-index: 1;
+  }
+  
+  #doubleopopup.doubleohide {
+    display: none;
+  }
+  
+  #doubleopopup.has-filter {
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+  
+  #doubleopopup .doubleocontent {
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+  }
+
+  #doubleopopup .doubleocontent {
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+  }
+
+  .trailerp{
+    position: relative;
+    top: -10px;
+  }
+
+  .post{
+    display: flex;
+    position: relative;
+    top: 25px;
+    left: -25px;
+    margin: 0 auto;
+  }
+
+  .total {
+    margin: auto;
+
+ }
+
+ .login1 {
+    position: relative;
+    top: 10px;
+ }
+
+ .adv {
+    position: relative;
+    border: solid 1px;
+    top: 20px;
+    width: 255px;
+    float: right;
+
+ }
+
+ .login {
+    background-color: white;
+
+    height: 210px;
+ }
+
+ .login2 {
+    margin-left: 20px;
+ }
+
+ * {
+    box-sizing: border-box;
+ }
+
+ body {
+    font-family: Arial;
+    background-color: #f1f1f1;
+    margin: auto;
+    width: 1200px;
+
+ }
+
+ .header {
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+    margin: auto;
+    width: 1200px;
+    
+ }
+
+ a{
+   text-decoration: none;
+   color: black;
+ }
+
+ a:visited{
+   color: black;
+ }
+
+ .header h1 {
+    font-size: 50px;
+    /* h1이라고 해서 그대로 쓰지 않고 사이즈 지정한다 */
+ }
+
+ .topnav {
+    overflow: hidden;
+    background: #333;
+    width: 1200px;
+
+ }
+
+ .topnav a {
+    display: block;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+ }
+
+ .topnav a:hover {
+    background: #ddd;
+    color: black;
+ }
+
+ .bodycolumn {
+    position: relative;
+    float: left;
+    width: 77.5%;
+    margin-left: 20px;
+ }
+
+ .logincolumn {
+    width: 250px;
+    float: left;
+
+    background-color: #f1f1f1;
+ }
+
+
+ .row::after {
+    /*foote 밑으로 떨어뜨리기  */
+    content: "";
+    clear: both;
+    display: table;
+ }
+
+ .makeid {
+    position: ab;
+
+    width: 220px;
+    margin: auto;
+    border-radius: 3%;
+    padding: 20px;
+
+ }
+
+ .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+ }
+
+ .footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #ddd;
+    margin-top: 20px;
+ }
+
+ .navbar-form {
+    padding: 7px 35px;
+ }
+
+ .searchinput {
+    width: 300px;
+    height: 35px;
+    padding: 10px;
+    position: relative;
+    left: 25px;
+    top: 5px;
+ }
+
+ .searchbutton {
+    position: relative;
+    top: 6px;
+    width: 50px;
+    left: 25px;
+ }
+
+
+ .makeid1 {
+    width: 200px;
+    position: relative;
+    top: -3px;
+    left: -10px;
+ }
+
+ .makeid2 {
+    width: 200px;
+    position: relative;
+    top: 2px;
+    left: -10px;
+ }
+
+ .makelog {
+    position: relative;
+    top: 10px;
+    width: 200px;
+    height: 30px;
+    left: -10px;
+    border-radius: 4px;
+ }
+
+ .makelog1 {
+    font-size: 13px;
+ }
+
+ .makelog2 {
+    font-size: 13px;
+    position: static;
+    left: 0px;
+    text-decoration-line: none;
+ }
+
+ .makelog3 {
+    font-size: 13px;
+    position: static;
+    left: 0px;
+    text-decoration-line: none;
+ }
+
+ .makelog4 {
+    font-size: 13px;
+    position: static;
+    left: 0px;
+    text-decoration-line: none;
+ }
+
+ .chae2 {
+    position: relative;
+    top: -10px;
+    left: -20px;
+    width: 52%;
+ }
+
+ .chae3 {
+    position: relative;
+    top: -278px;
+    left: 452px;
+    width: 52%;
+
+ }
+
+
+ .ranking {
+    text-decoration-line: none;
+    color: black;
+    font-size: 15px;
+ }
+
+ .plmovie {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    height: 280px;
+
+ }

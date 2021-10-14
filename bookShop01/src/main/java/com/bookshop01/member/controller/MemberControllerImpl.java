@@ -60,7 +60,7 @@ public class MemberControllerImpl extends BaseController implements MemberContro
 			if(action!=null && action.equals("/order/orderEachGoods.do")){
 				mav.setViewName("forward:"+action);
 			}else{
-				mav.setViewName("redirect:/main/main.do");	
+				mav.setViewName("/main/main");
 			}
 		}else{
 			String message="아이디나  비밀번호가 틀립니다. 다시 로그인해주세요";
@@ -71,7 +71,7 @@ public class MemberControllerImpl extends BaseController implements MemberContro
 	}
 	
 	@Override
-	@RequestMapping(value="/logout.do" ,method = RequestMethod.GET)
+	@RequestMapping(value="/logout.do" ,method={RequestMethod.POST,RequestMethod.GET})
 	public ModelAndView logout(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		ModelAndView mav = new ModelAndView();
 		HttpSession session=request.getSession();

@@ -5,9 +5,9 @@
 * {
 	margin: 0px; padding: 0px; vertical-align: middle;
 }
-body {
+/* body {
 	background-position: top; margin: 0px; padding: 0px; color: rgb(102, 102, 102); font-family: "Dotum", Arial,serif; font-size: 1em; background-image: url("../imgs/body_back.gif"); background-repeat: repeat-x; background-color: rgb(255, 255, 255);
-}
+} */
 img {
 	border: currentColor; border-image: none;
 }
@@ -28,7 +28,7 @@ a:hover {
 }
 header {
 	margin-top: 20px;
-}
+} 
 header #logo {
 	margin-left: 10px; float: left;
 }
@@ -53,9 +53,9 @@ header #search .main_input {
 header #search .btn1 {
 	border: 1px solid rgb(51, 102, 153); border-image: none; width: 55px; height: 28px; color: rgb(255, 255, 255); margin-left: 2px; background-color: rgb(51, 102, 153);
 }
-aside {
+/* aside {
 	width: 205px; float: left;
-}
+} */
 nav {
 	margin: 25px 0px 0px 10px; font-family: "NanumGothic", Serif; font-size: 0.8em;
 }
@@ -92,9 +92,9 @@ aside #banner {
 #notice ul li {
 	background-position: left; padding: 0px 0px 0px 7px; line-height: 1.5em; background-image: url("../imgs/notice_li.gif"); background-repeat: no-repeat;
 }
-article {
+/* article {
 	margin: 20px 0px 0px 15px; width: 775px; float: right;
-}
+} */
 
 .link {
 	width: 188px; height: 230px; display: block; position: absolute; z-index: 2;
@@ -112,9 +112,9 @@ article hgroup {
 article h1 {
 	padding: 0px 0px 5px; letter-spacing: 2px; font-family: "NanumGothic"; font-size: 1.1em; border-bottom-color: rgb(102, 102, 102); border-bottom-width: 2px; border-bottom-style: solid;
 }
-article h2 {
+/* article h2 {
 	padding-top: 5px; font-size: 0.75em; font-weight: normal;
-}
+} */
 section#new_book {
 	padding: 7px 10px; border-radius: 10px; border: 1px solid rgb(102, 102, 102); border-image: none; width: auto; overflow: hidden; font-size: 0.75em; margin-top: 10px;
 }
@@ -381,9 +381,13 @@ ul.tabs li.active a:hover {
 .tab_content .writer {
 	margin: 10px 0px; padding: 5px; color: rgb(0, 0, 0); font-size: 1.2em; font-weight: bold; border-bottom-color: rgb(255, 153, 0); border-bottom-width: 1px; border-bottom-style: solid;
 }
-footer {
-	background-position: top; margin: 10px 0px 0px; font-size: 0.75em; background-image: url("../imgs/foo_back.gif"); background-repeat: repeat-x;
-}
+/*  footer {
+	background-position: top; 
+	margin: 10px 0px 0px; 
+	font-size: 0.75em; 
+	background-image: url("../imgs/foo_back.gif"); 
+	background-repeat: repeat-x;
+}  */
 footer ul {
 	list-style: none; margin: 0px 0px 0px 210px;
 }
