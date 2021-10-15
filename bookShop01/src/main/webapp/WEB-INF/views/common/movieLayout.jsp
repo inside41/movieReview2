@@ -86,6 +86,17 @@
 		$(this).removeClass("hover");
 	});
 	
+	 var cnt=1;
+	 function fn_addFile(){
+		 $("#d_file").append("<br>"+"<strong>한글이름</strong><input type='text'>");
+		 $("#d_file").append("<br>"+"<span class='bondtext1'>영어이름</span><input type='text'>");
+		 $("#d_file").append("<br>"+"<span class='bondtext2' style='color: red;'>주연</span> <input type='text' >");
+		 $("#d_file").append("<br>"+"<span> 배역 </span> <input type='text'>");
+		 $("#d_file").append("<br>"+"<span>현 영화,개봉연도</span> <input type='text' > ");
+		 $("#d_file").append("<br>"+"<span>흥행작,개봉연도</span><input type='text' >");
+		 $("#d_file").append("<br>"+"<input type='file' name='file"+cnt+"' /><br><br>");
+	  		cnt++;
+	 }  
 </script>
 	<title><tiles:insertAttribute name="title" /></title>
 	

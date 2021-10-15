@@ -16,8 +16,10 @@ request.setCharacterEncoding("UTF-8");
 </div>
 <!-- .topnav>a[href=#]*4>{Link} -->
 <div class="topnav">
-	<a href="#">Link</a> <a href="#">Link</a> <a href="#">Link</a> <a
-		href="#">Link</a>
+	<a href="${contextPath}/member/shmoviemain.do">detail</a> 
+	<a href="#">Link</a> 
+	<a href="#">Link</a> 
+	<a href="#">Link</a>
 	<div class="search">
 		<input class="searchinput" type="text"
 			placeholder="Search movies, TV, actors, more...">
