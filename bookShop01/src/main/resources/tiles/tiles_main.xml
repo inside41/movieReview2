@@ -28,10 +28,15 @@
 		<put-attribute name="body" value="/WEB-INF/views/main/main.jsp" />
 	</definition> -->
 	
-	<definition name="/main/main" extends="movieBaseLayout">
+ 	<definition name="/main/main" extends="movieBaseLayout">
 		<put-attribute name="title" value="SHGreip 메인페이지" />
 		<put-attribute name="body" value="/WEB-INF/views/main/SHGreipMain.jsp" />
-	</definition>
+	</definition> 
+	
+ 	<definition name="/main/test" extends="movieBaseLayout">
+		<put-attribute name="title" value="" />
+		<put-attribute name="body" value="/WEB-INF/views/main/minhoTest.jsp" />
+	</definition> 
 </tiles-definitions>
 
 

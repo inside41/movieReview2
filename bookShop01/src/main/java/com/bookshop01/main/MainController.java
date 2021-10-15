@@ -47,4 +47,11 @@ public class MainController extends BaseController {
 		mav.setViewName("/main/main");
 		return mav;
 	}
+	
+	@RequestMapping(value= "/main/minhotest.do" ,method={RequestMethod.POST,RequestMethod.GET})
+	public ModelAndView minhotest(HttpServletRequest request, HttpServletResponse response) throws Exception{
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("/main/test");
+		return mav;
+	}
 }

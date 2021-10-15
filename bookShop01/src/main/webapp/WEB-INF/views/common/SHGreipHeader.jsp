@@ -7,14 +7,13 @@
 request.setCharacterEncoding("UTF-8");
 %>
 
-<!-- .header>h1+p>lorem5 -->
 <div class="header">
 	<a href="${contextPath}/main/main.do">
 		<h1>SH Grape</h1>
 		<p>당신의 영화 라이프를 안락하게</p>
 	</a>
 </div>
-<!-- .topnav>a[href=#]*4>{Link} -->
+
 <div class="topnav">
 	<a href="#">Link</a> <a href="#">Link</a> <a href="#">Link</a> <a
 		href="#">Link</a>

@@ -36,10 +36,6 @@
     top: -40px;
 }
 
-.chaeyoung {
-
-}
-
 
 ul.imgs{
     padding: 0;
@@ -144,16 +140,6 @@ ul.imgs li{
     
 }
 
-.trailer{
-    display: flex;
-    height: 400px;
-    padding: 10px;
-    margin : auto;
-    position: relative;
-    top: 20px;
-    background-color: white;
-    width: 100%;
-}
 
 button {
     height: 2.5em;
@@ -249,114 +235,19 @@ figure.venomzoom.hover img {
 }
 
 
-figure.doubleozoom {
-position: relative;
-overflow: hidden;
-margin: 10px;
-max-width: 200px;
-max-height: 320px;
 
-}
 
-figure.doubleozoom * {
--webkit-box-sizing: border-box;
-box-sizing: border-box;
--webkit-transition: all 0.45s ease-in-out;
-transition: all 0.45s ease-in-out;
-}
-
-figure.doubleozoom:hover img,
-figure.doubleozoom.hover img {
-opacity: 0.35;
--webkit-transform: scale(1.15);
-transform: scale(1.15);
-}
-
-.doubleo{
-    width: 200px;
-    height: 310px;
-}
 
 /* 여기서부터 007 팝업 */
 
 
-#doubleopopup {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, .7);
-    z-index: 1;
-  }
-  
-  #doubleopopup.doubleohide {
-    display: none;
-  }
-  
-  #doubleopopup.has-filter {
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-  }
-  
-  #doubleopopup .doubleocontent {
-    padding: 20px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
-  }
 
-  #doubleopopup .doubleocontent {
-    padding: 20px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
-  }
-
-  .trailerp{
-    position: relative;
-    top: -10px;
-  }
-
-  .post{
-    display: flex;
-    position: relative;
-    top: 25px;
-    left: -25px;
-    margin: 0 auto;
-  }
 
   .total {
     margin: auto;
 
  }
 
- .login1 {
-    position: relative;
-    top: 10px;
- }
-
- .adv {
-    position: relative;
-    border: solid 1px;
-    top: 20px;
-    width: 255px;
-    float: right;
-
- }
-
- .login {
-    background-color: white;
-
-    height: 210px;
- }
-
- .login2 {
-    margin-left: 20px;
- }
 
  * {
     box-sizing: border-box;
@@ -370,14 +261,7 @@ transform: scale(1.15);
 
  }
 
- .header {
-    padding: 30px;
-    text-align: center;
-    background-color: white;
-    margin: auto;
-    width: 1200px;
-    
- }
+
 
  a{
    text-decoration: none;
@@ -388,45 +272,15 @@ transform: scale(1.15);
    color: black;
  }
 
- .header h1 {
-    font-size: 50px;
-    /* h1이라고 해서 그대로 쓰지 않고 사이즈 지정한다 */
- }
 
- .topnav {
-    overflow: hidden;
-    background: #333;
-    width: 1200px;
-
- }
-
- .topnav a {
-    display: block;
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
- }
-
- .topnav a:hover {
-    background: #ddd;
-    color: black;
- }
 
  .bodycolumn {
-    position: relative;
-    float: left;
-    width: 77.5%;
-    margin-left: 20px;
+  position: relative;
+	width: 930px;
+    left: 270px;
+    top : -850px;
  }
 
- .logincolumn {
-    width: 250px;
-    float: left;
-
-    background-color: #f1f1f1;
- }
 
 
  .row::after {
@@ -436,63 +290,19 @@ transform: scale(1.15);
     display: table;
  }
 
- .makeid {
-    position: ab;
 
-    width: 220px;
-    margin: auto;
-    border-radius: 3%;
-    padding: 20px;
 
- }
 
- .card {
-    background-color: white;
-    padding: 20px;
-    margin-top: 20px;
- }
-
- .footer {
-    padding: 20px;
-    text-align: center;
-    background-color: #ddd;
-    margin-top: 20px;
- }
 
  .navbar-form {
     padding: 7px 35px;
  }
 
- .searchinput {
-    width: 300px;
-    height: 35px;
-    padding: 10px;
-    position: relative;
-    left: 25px;
-    top: 5px;
- }
-
- .searchbutton {
-    position: relative;
-    top: 6px;
-    width: 50px;
-    left: 25px;
- }
 
 
- .makeid1 {
-    width: 200px;
-    position: relative;
-    top: -3px;
-    left: -10px;
- }
 
- .makeid2 {
-    width: 200px;
-    position: relative;
-    top: 2px;
-    left: -10px;
- }
+
+
 
  .makelog {
     position: relative;
@@ -544,16 +354,3 @@ transform: scale(1.15);
  }
 
 
- .ranking {
-    text-decoration-line: none;
-    color: black;
-    font-size: 15px;
- }
-
- .plmovie {
-    background-color: white;
-    padding: 20px;
-    margin-top: 20px;
-    height: 280px;
-
- }
