@@ -55,4 +55,9 @@ public class MemberDAOImpl implements MemberDAO {
 		MemberVO result = sqlSession.selectOne("mapper.member.updateMemberPW", memberVO);
 		return result;
 	}
+	// 아이디 찾기
+	public String find_id(MemberVO memberVO) throws Exception{
+		return sqlSession.selectOne("mapper.member.find_id", memberVO);
+	}
+
 }

@@ -79,6 +79,14 @@
 		]]>
 	</update>
 	
+			<!-- 아이디 찾기 -->
+	<select id="find_id" parameterType="memberVO" resultType="String">
+		select * from t_shopping_member
+		 where email1 = #{email1} 
+		 and email2 = #{email2}
+		 and member_name = #{member_name}		
+	</select>
+	
 	<select id="selectOverlappedID" parameterType="String" resultType="String">
 	   select decode(count(*),1, 'true', 0, 'false')
 	   from t_shopping_member

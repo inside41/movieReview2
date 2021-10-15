@@ -1,6 +1,5 @@
 package com.bookshop01.member.controller;
 
-import java.util.List;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
@@ -12,16 +11,15 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.bookshop01.common.SHA256.SHA256Util;
 import com.bookshop01.common.base.BaseController;
-import com.bookshop01.goods.vo.GoodsVO;
 import com.bookshop01.member.service.MemberService;
 import com.bookshop01.member.vo.MemberVO;
 
@@ -201,5 +199,31 @@ public class MemberControllerImpl extends BaseController implements MemberContro
 		}
 		resEntity =new ResponseEntity(message, responseHeaders, HttpStatus.OK);
 		return resEntity;
+	}
+	
+	// 아이디 찾기 폼
+	@RequestMapping(value = "/find_id_form.do")
+	public String find_id_form() throws Exception{
+		return "/member/find_id_form";
+	}
+	
+	@RequestMapping(value = "/find_id.do", method = RequestMethod.POST)
+	public String find_id(HttpServletResponse response, @RequestParam("email1")  String email1, @RequestParam("email2")  String email2, @RequestParam("name")  String name,Model md) throws Exception{
+		//String str [] = email1.split("@");
+		memberVO.setEmail1(email1);		
+		memberVO.setEmail2(email2);
+		memberVO.setMember_name(name);
+		md.addAttribute("id", memberService.find_id(response, memberVO));
+			return "/member/find_id";
+	} 
+	
+
+	
+	//SHMovie
+	@RequestMapping(value = "/shmoviemain.do")
+	public ModelAndView SHMovieMain(HttpServletRequest request, HttpServletResponse response) throws Exception{
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("/main/SHMovieMain");
+		return mav;
 	}
 }

@@ -15,4 +15,6 @@ public interface MemberDAO {
 	public MemberVO selectMemberID(MemberVO memberVO) throws DataAccessException;
 	public MemberVO selectMemberPW(MemberVO memberVO) throws DataAccessException;
 	public MemberVO updateMemberPW(MemberVO memberVO) throws DataAccessException;
+	// 아이디 찾기
+	public String find_id(MemberVO memberVO) throws Exception;
 }

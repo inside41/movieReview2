@@ -22,6 +22,21 @@
          <put-attribute name="title" value="비밀번호 변경 페이지" />
          <put-attribute name="body" value="/WEB-INF/views/member/changeForm.jsp" />
       </definition>
+      
+                  <definition name="/member/find_id_form" extends="MoviebaseLayout">
+         <put-attribute name="title" value="아이디 찾기" />
+         <put-attribute name="body" value="/WEB-INF/views/member/find_id_form.jsp" />
+      </definition>
+      
+      <definition name="/member/find_id" extends="MoviebaseLayout">
+         <put-attribute name="title" value="아이디 찾기 결과" />
+         <put-attribute name="body" value="/WEB-INF/views/member/find_id.jsp" />
+      </definition>
+      
+            <definition name="/member/regFormImpl" extends="MoviebaseLayout">
+         <put-attribute name="title" value="회원가입 약관" />
+         <put-attribute name="body" value="/WEB-INF/views/member/regFormImpl.jsp" />
+      </definition>
   
 </tiles-definitions>
 
