@@ -1,0 +1,82 @@
+@charset "EUC-KR";
+
+ .logincolumn {
+ 	position : relative;
+    width: 250px;
+    top : 10px;
+
+    background-color: #f1f1f1;
+
+ }
+
+  .login1 {
+    position: relative;
+    top: 10px;
+ }
+
+ .adv {
+    position: relative;
+    border: solid 1px;
+    top: 20px;
+    width: 255px;
+    float: right;
+
+ }
+
+ .login {
+    background-color: white;
+    height: 210px;
+    border : 1px solid black;
+ }
+
+ .login2 {
+    margin-left: 20px;
+ }
+ 
+  .makeid {
+    position: ab;
+
+    width: 220px;
+    margin: auto;
+    border-radius: 3%;
+    padding: 20px;
+
+ }
+ 
+ 
+ 
+  .makeid2 {
+    width: 200px;
+    position: relative;
+    top: 2px;
+    left: -10px;
+ }
+ 
+ 
+ .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+ }
+ 
+ 
+ .ranking {
+    text-decoration-line: none;
+    color: black;
+    font-size: 15px;
+ }
+ 
+ .diamond {
+	position: relative;
+	float: right;
+}
+ 
+ 
+ 
+ .plmovie {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    height: 280px;
+
+ }

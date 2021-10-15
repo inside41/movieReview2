@@ -1,0 +1,15 @@
+@charset "EUC-KR";
+
+
+ .footer {
+ 	position: relative;
+ 	width:1200px;
+    padding: 20px;
+    text-align: center;
+    background-color: #ddd;
+    margin-top: 20px;
+    top : -900px;
+    float : left;
+    border : 1px solid black;
+ }
+
