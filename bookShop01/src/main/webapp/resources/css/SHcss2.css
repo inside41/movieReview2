@@ -1,3 +1,8 @@
+.testcsss{
+	width : 100%;
+}
+
+
 .diamond {
 	position: relative;
 	float: right;
