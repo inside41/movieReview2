@@ -36,12 +36,13 @@ request.setCharacterEncoding("UTF-8");
                       
                      <span>예고편링크 추가</span>
                      <input type="text" name="trailer">
-                     
-                    	
-                     
+                 
                      <br>
-                     <img class="doubleoimg" src="${contextPath}/resources/img/007.jpg" alt="007">    
-                   	이미지파일 첨부<input type="button" name="poster" value="파일 추가" onClick="fn_addFile()"/>
+                     <img class="doubleoimg" src="" alt="007">    
+                   	이미지파일 첨부<input type="file" name="poster" value="파일 선택"/>
+                   	<div id="AddPoster"></div>
+                   	
+                   
                      
                   </div>
                   
@@ -101,7 +102,7 @@ request.setCharacterEncoding("UTF-8");
                               <span>흥행작,개봉연도</span><input type="text" > 
                                                         
                         </div> -->
-                        배역 추가<input type="button" name="poster" value="파일 추가" onClick="fn_addFile()"/>
+                        배역 추가<input type="button" name="movieactor" value="파일 추가" onClick="fn_addFile()"/>
                      	<div id="d_file"></div>
                      </div>                 
                   </div>
@@ -124,52 +125,30 @@ request.setCharacterEncoding("UTF-8");
                      <hr>
                      <div class="screenplay">
                         <strong> <br><br> <span style="color: red;">각본</span></strong>
-                       
-                        
                      </div>
-                     <div class="neal">
-                        <p> <span style="color: gray;"> </span></p><input type="text">
-                        
-                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                        <p> 로버트 웨이드<span style="color: gray;"> Robert Wade</span> </p>
-                     </div>
-                     <div class="neal">
-                        <p>캐리 후쿠나가 <span style="color: gray;"> Cary Fukunaga </span> </p>
-                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                        <p> 피비 윌러-브리지<span style="color: gray;"> Phoebe Waller-Bridge</span></p>
-                     </div>
-                     <div class="neal">
-                        <p>이안 플레밍 <span style="color: gray;"> Ian Fleming </span></p>
-                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                     </div>
+                                          	<div id="DirectorRow"></div>
+                     	  <input type="button" name="directorname" value="디렉터 추가" onClick="fn_addDirector()"/>
+                    
+                     <!-- <div class="neal"> -->
+              
                      <hr>
+                     
                      <div class="screenplay">
                         <strong> <br><br> <span style="color: red;">제작</span></strong>
                         
                      </div>
-                     <div class="neal">
-                        <p> <span style="color: gray;"> </span></p><input type="text">
-                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                        <p> 마이클 G. 윌슨<span style="color: gray;"> Michael G Wilson</span> </p>
-                     </div>
-                     <div class="neal">
-                        <p>앤드류 노아케스 <span style="color: gray;"> Andrew Noakes </span> </p>
-                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                        <p>페 헨리 볼크<span style="color: gray;">Per Henry Borch</span></p>
-                     </div>
-                     <div class="neal">
-                        <p>엔조 시스티 <span style="color: gray;"> Enzo Sisti </span></p>
-                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                     </div>
+                     <div id="DirectorRow2"></div>
+                     	  <input type="button" name="directorname2" value="디렉터 추가" onClick="fn_addDirector2()"/>
+
                      <hr>
                      <div class="screenplay">
                         <strong> <br><br> <span style="color: red;">기획</span></strong>
                      </div>
-                     <div class="neal">
-                        <p>크리스 브라이험 <span style="color: gray;"> Chris Brigham </span></p>
-                     </div>
+                     <div id="DirectorRow3"></div>
+                     	  <input type="button" name="directorname3" value="디렉터 추가" onClick="fn_addDirector3()"/>
+
                      <hr>
-                  </div>
+                  <!-- </div> -->
                   </form>
                   <div class="comment">
                      <div class="red_bar">
@@ -177,9 +156,3 @@ request.setCharacterEncoding("UTF-8");
                      </div>
                   </div>
 
-                  <div id="disqus_thread"></div>
-
-                  </div>
-               </div>
-            </div>
-         </div>

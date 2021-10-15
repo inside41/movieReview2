@@ -6,19 +6,9 @@
 <%
 request.setCharacterEncoding("UTF-8");
 %>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
-<div class="footer">
+ 
+   <!-- .footer>h2>{Footer} -->
+   <div class="footer">
       <h2>Footer</h2>
    </div>
    </div>
-</body>
-
-</html>
-</body>
-</html>

@@ -85,7 +85,7 @@
 	$(".hover").mouseleave(function() {
 		$(this).removeClass("hover");
 	});
-	
+	//다중 이미지 추가
 	 var cnt=1;
 	 function fn_addFile(){
 		 $("#d_file").append("<br>"+"<strong>한글이름</strong><input type='text'>");
@@ -95,8 +95,30 @@
 		 $("#d_file").append("<br>"+"<span>현 영화,개봉연도</span> <input type='text' > ");
 		 $("#d_file").append("<br>"+"<span>흥행작,개봉연도</span><input type='text' >");
 		 $("#d_file").append("<br>"+"<input type='file' name='file"+cnt+"' /><br><br>");
-	  		cnt++;
+		 
+	  		cnt++;	  		
+ }  
+	 var cnt2=1; 
+	 function fn_addDirector(){
+		 $("#DirectorRow").append("<br>"+"<input type='text' placeholder='한글이름'>");
+		 $("#DirectorRow").append("<input type='text'  placeholder='영어이름'>");
+	  		cnt1++;
 	 }  
+	 
+	 var cnt3=1;
+	 function fn_addDirector2(){
+		 $("#DirectorRow2").append("<br>"+"<input type='text' placeholder='한글이름'>");
+		 $("#DirectorRow2").append("<input type='text'  placeholder='영어이름'>");
+	  		cnt1++;
+	 }  
+	 var cnt4=1;
+	 function fn_addDirector3(){
+		 $("#DirectorRow3").append("<br>"+"<input type='text' placeholder='한글이름'>");
+		 $("#DirectorRow3").append("<input type='text'  placeholder='영어이름'>");
+	  		cnt1++;
+	 }  
+	
+	 
 </script>
 	<title><tiles:insertAttribute name="title" /></title>
 	

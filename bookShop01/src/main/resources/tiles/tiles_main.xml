@@ -46,7 +46,7 @@
 		<put-attribute name="body" value="/WEB-INF/views/main/SHGreipMain.jsp" />
 	</definition>
 
-	<definition name="/main/SHMovieMain" extends="movieBaseLayout">
+	<definition name="/main/SHMovieMain" extends="MoviebaseLayout">
 		<put-attribute name="title" value="영화 상세페이지" />
 		<put-attribute name="body" value="/WEB-INF/views/main/SHMovieMain.jsp" />
 	</definition>

@@ -254,7 +254,7 @@
 
 .producer1 {
 	position: absolute;
-	top: 2000;
+	top: 0;
 	left: 50px;
 	background-color: white;
 	padding: 1px 5px;
@@ -270,7 +270,7 @@
 
 .director1 {
 	position: absolute;
-	top: 2000;
+	top: 0;
 	left: 50px;
 	background-color: white;
 	padding: 1px 5px;
@@ -306,7 +306,7 @@
 
 .comment1 {
 	position: absolute;
-	top: 2500;
+	top: 0;
 	left: 50px;
 	background-color: white;
 	padding: 1px 5px;
