@@ -23,7 +23,7 @@
          <put-attribute name="body" value="/WEB-INF/views/member/changeForm.jsp" />
       </definition>
       
-                  <definition name="/member/find_id_form" extends="MoviebaseLayout">
+       <definition name="/member/find_id_form" extends="MoviebaseLayout">
          <put-attribute name="title" value="아이디 찾기" />
          <put-attribute name="body" value="/WEB-INF/views/member/find_id_form.jsp" />
       </definition>

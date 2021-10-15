@@ -6,13 +6,6 @@
 <%
 request.setCharacterEncoding("UTF-8");
 %>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
 <div class="bodycolumn">
             <!-- .card*2 -->
             <div class="card">
@@ -235,6 +228,3 @@ request.setCharacterEncoding("UTF-8");
                </div>
             </div>
          </div>
-        
-</body>
-</html>

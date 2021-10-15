@@ -22,11 +22,19 @@
 		<put-attribute name="title" value="레이아웃 페이지" />
 		<put-attribute name="header"
 			value="/WEB-INF/views/common/SHGreipHeader.jsp" />
-		<put-attribute name="side"
-			value="/WEB-INF/views/common/SHGreipSide.jsp" />
+		<put-attribute name="side" value="/WEB-INF/views/common/SHGreipSide.jsp" />
 		<put-attribute name="body" value="" />
-		<put-attribute name="footer"
-			value="/WEB-INF/views/common/SHGreipFooter.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/views/common/SHGreipFooter.jsp" />
+		<put-attribute name="quickMenu" value="" />
+	</definition>
+
+	<definition name="MoviebaseLayout"
+		template="/WEB-INF/views/common/movieLayout.jsp">
+		<put-attribute name="title" value="레이아웃 페이지" />
+		<put-attribute name="header" value="/WEB-INF/views/common/SHMovieHeader.jsp" />
+		<put-attribute name="side" value="/WEB-INF/views/common/SHMovieSide.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/common/SHMovieFooter.jsp" />
 		<put-attribute name="quickMenu" value="" />
 	</definition>
 
@@ -36,15 +44,12 @@
 
 	<definition name="/main/main" extends="movieBaseLayout">
 		<put-attribute name="title" value="SHGreip 메인페이지" />
-		<put-attribute name="body"
-			value="/WEB-INF/views/main/SHGreipMain.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/main/SHGreipMain.jsp" />
 	</definition>
 
-	<definition name="/main/SHMovieMain"
-		extends="MoviebaseLayout">
+	<definition name="/main/SHMovieMain" extends="MoviebaseLayout">
 		<put-attribute name="title" value="영화 상세페이지" />
-		<put-attribute name="body"
-			value="/WEB-INF/views/main/SHMovieMain.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/main/SHMovieMain.jsp" />
 	</definition>
 </tiles-definitions>
 
