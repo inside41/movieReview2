@@ -17,12 +17,15 @@ import org.springframework.web.servlet.ModelAndView;
 import com.bookshop01.common.base.BaseController;
 import com.bookshop01.goods.service.GoodsService;
 import com.bookshop01.goods.vo.GoodsVO;
+import com.bookshop01.movie.service.MovieService;
 
 @Controller("mainController")
 @EnableAspectJAutoProxy
 public class MainController extends BaseController {
 	@Autowired
-	private GoodsService goodsService;
+	private MovieService movieService;
+	
+	
 
 //	@RequestMapping(value= "/main/main.do" ,method={RequestMethod.POST,RequestMethod.GET})
 //	public ModelAndView main(HttpServletRequest request, HttpServletResponse response) throws Exception{
@@ -44,6 +47,10 @@ public class MainController extends BaseController {
 		session=request.getSession();
 		session.setAttribute("side_menu", "user");
 		ModelAndView mav = new ModelAndView();
+		
+		mav.addObject("movieRankingList",movieService.searchMovieRanking());
+		mav.addObject("movieReleaseList",movieService.searchMovieRelease());
+		
 		mav.setViewName("/main/main");
 		return mav;
 	}

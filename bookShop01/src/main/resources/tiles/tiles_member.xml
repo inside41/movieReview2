@@ -23,17 +23,17 @@
          <put-attribute name="body" value="/WEB-INF/views/member/changeForm.jsp" />
       </definition>
       
-       <definition name="/member/find_id_form" extends="MoviebaseLayout">
+       <definition name="/member/find_id_form" extends="MovieDetailLayout">
          <put-attribute name="title" value="아이디 찾기" />
          <put-attribute name="body" value="/WEB-INF/views/member/find_id_form.jsp" />
       </definition>
       
-      <definition name="/member/find_id" extends="MoviebaseLayout">
+      <definition name="/member/find_id" extends="MovieDetailLayout">
          <put-attribute name="title" value="아이디 찾기 결과" />
          <put-attribute name="body" value="/WEB-INF/views/member/find_id.jsp" />
       </definition>
       
-            <definition name="/member/regFormImpl" extends="MoviebaseLayout">
+      <definition name="/member/regFormImpl" extends="MovieDetailLayout">
          <put-attribute name="title" value="회원가입 약관" />
          <put-attribute name="body" value="/WEB-INF/views/member/regFormImpl.jsp" />
       </definition>
