@@ -50,27 +50,27 @@ request.setCharacterEncoding("UTF-8");
       </div>
 		<div class="news2" style="height: 250px">
 			<p>
-				<a href="./SH Greip_news.html" class="news2p">&nbsp <strong>'베놈
+				<a href="${contextPath}/news/news.do?newsTitle=article_news_001" class="news2p">&nbsp <strong>'베놈
 						2' 쿠키 영상까지 봐야 하는 이유</strong>
 				</a>
 			</p>
 			<p>
-				<a href="#" class="news2p">&nbsp <strong>'007 노 타임 투
+				<a href="${contextPath}/news/news.do?newsTitle=article_news_002" class="news2p">&nbsp <strong>'007 노 타임 투
 						다이' 2주연속 1위</strong></a>
 			</p>
 			<p>
-				<a href="#" class="news2p">&nbsp <strong>최장기 007에 바치는
+				<a href="${contextPath}/news/news.do?newsTitle=article_news_003" class="news2p">&nbsp <strong>최장기 007에 바치는
 						헌사 '노 타임 투 다이'</strong></a>
 			</p>
 			<p>
-				<a href="#" class="news2p">&nbsp <strong>부산국제영화제 찾은 최민식</strong></a>
+				<a href="${contextPath}/news/news.do?newsTitle=article_news_004" class="news2p">&nbsp <strong>부산국제영화제 찾은 최민식</strong></a>
 			</p>
 			<p>
-				<a href="#" class="news2p">&nbsp <strong>제26회 부산국제영화제
+				<a href="${contextPath}/news/news.do?newsTitle=article_news_005" class="news2p">&nbsp <strong>제26회 부산국제영화제
 						개막식</strong></a>
 			</p>
 			<p>
-				<a href="#" class="news2p">&nbsp <strong>부산국제영화제 참석한</strong></a>
+				<a href="${contextPath}/news/news.do?newsTitle=article_news_006" class="news2p">&nbsp <strong>부산국제영화제 참석한</strong></a>
 			</p>
 
 		</div>

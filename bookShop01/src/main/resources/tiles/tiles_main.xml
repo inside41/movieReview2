@@ -27,7 +27,7 @@
 		<put-attribute name="quickMenu" value="" />
 	</definition>
 
-	<definition name="MoviebaseLayout"
+	<definition name="MovieDetailLayout"
 		template="/WEB-INF/views/common/movieLayout.jsp">
 		<put-attribute name="title" value="레이아웃 페이지" />
 		<put-attribute name="header" value="/WEB-INF/views/common/SHMovieHeader.jsp" />
@@ -46,7 +46,7 @@
 		<put-attribute name="body" value="/WEB-INF/views/main/SHGreipMain.jsp" />
 	</definition>
 
-	<definition name="/main/SHMovieMain" extends="MoviebaseLayout">
+	<definition name="/main/SHMovieMain" extends="MovieDetailLayout">
 		<put-attribute name="title" value="영화 상세페이지" />
 		<put-attribute name="body" value="/WEB-INF/views/main/SHMovieMain.jsp" />
 	</definition>
@@ -55,6 +55,12 @@
 		<put-attribute name="title" value="" />
 		<put-attribute name="body" value="/WEB-INF/views/main/minhoTest.jsp" />
 	</definition> 
+	
+	<definition name="/main/movieDetail" extends="movieBaseLayout">
+		<put-attribute name="title" value="" />
+		<put-attribute name="body" value="/WEB-INF/views/movie/SHGrape_movie.jsp" />
+	</definition> 
+	
 </tiles-definitions>
 
 
