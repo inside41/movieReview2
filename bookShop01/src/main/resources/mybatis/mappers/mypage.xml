@@ -5,7 +5,7 @@
 
 <mapper namespace="mapper.mypage">
 <!-- 리절트 맵 정의 -->
-	<resultMap id="orderGoodsResult" type="orderVO">
+	<resultMap id="orderGoodsResult" type="OrderVO">
 		<result property="order_id" column="order_id" />
 		<result property="member_id" column="member_id" />
 		<result property="goods_id" column="goods_id" />

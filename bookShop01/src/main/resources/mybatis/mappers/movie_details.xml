@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mapper.movie">
+	<resultMap id="movieResult" type="MovieVO">
+		<result property="movie_id" column="movie_id" />
+		<result property="ko_title" column="ko_title" />
+		<result property="en_title" column="en_title" />
+		<result property="tailer" column="tailer" />
+		<result property="poster" column="poster" />
+		<result property="releasedate" column="releasedate" />
+		<result property="rating" column="rating" />
+		<result property="genre" column="genre" />
+		<result property="runtime" column="runtime" />
+		<result property="fresh_score" column="fresh_score" />
+		<result property="audience_score" column="audience_score" />
+		<result property="story" column="story" />
+		<result property="producer" column="producer" />
+		<result property="distributor" column="distributor" />
+		<result property="create_date" column="create_date" />
+		<result property="change_date" column="change_date" />
+	</resultMap>
+
+	<select id="selectMovieRanking" resultMap="movieResult">
+	    <![CDATA[
+			SELECT * FROM 
+				(SELECT * FROM movie_details 
+				ORDER BY audience_score DESC)
+			WHERE ROWNUM <= 6
+		]]>
+	</select>
+
+	<select id="selectReleaseMovie" resultMap="movieResult">
+	    <![CDATA[
+	    	SELECT * FROM 
+				(SELECT * FROM movie_details
+				 ORDER BY releasedate DESC)
+			WHERE ROWNUM <= 5
+			 
+		]]>
+	</select>
+
+</mapper>

@@ -112,9 +112,9 @@ article hgroup {
 article h1 {
 	padding: 0px 0px 5px; letter-spacing: 2px; font-family: "NanumGothic"; font-size: 1.1em; border-bottom-color: rgb(102, 102, 102); border-bottom-width: 2px; border-bottom-style: solid;
 }
-/* article h2 {
+article h2 {
 	padding-top: 5px; font-size: 0.75em; font-weight: normal;
-} */
+} 
 section#new_book {
 	padding: 7px 10px; border-radius: 10px; border: 1px solid rgb(102, 102, 102); border-image: none; width: auto; overflow: hidden; font-size: 0.75em; margin-top: 10px;
 }
