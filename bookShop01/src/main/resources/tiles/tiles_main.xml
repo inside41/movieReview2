@@ -55,6 +55,12 @@
 		<put-attribute name="title" value="" />
 		<put-attribute name="body" value="/WEB-INF/views/main/minhoTest.jsp" />
 	</definition> 
+	
+	<definition name="/main/movieDetail" extends="movieBaseLayout">
+		<put-attribute name="title" value="" />
+		<put-attribute name="body" value="/WEB-INF/views/movie/SHGrape_movie.jsp" />
+	</definition> 
+	
 </tiles-definitions>
 
 

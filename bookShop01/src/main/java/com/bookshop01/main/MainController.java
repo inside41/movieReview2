@@ -54,4 +54,13 @@ public class MainController extends BaseController {
 		mav.setViewName("/main/test");
 		return mav;
 	}
+	
+	@RequestMapping(value= "/main/movieDetail.do" ,method={RequestMethod.POST,RequestMethod.GET})
+	public ModelAndView movieDetail(HttpServletRequest request, HttpServletResponse response) throws Exception{
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("/main/movieDetail");
+		return mav;
+	}
+	
+	
 }

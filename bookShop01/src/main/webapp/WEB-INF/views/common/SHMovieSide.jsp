@@ -55,7 +55,7 @@ request.setCharacterEncoding("UTF-8");
 <div class="card">
 	<h3>박스오피스 순위</h3>
 	<p>
-		<a href="#" class="ranking">1. 베놈2: 렛 데어 비 카니지<span
+		<a href="${contextPath}/movie/movieDetail.do" class="ranking">1. 베놈2: 렛 데어 비 카니지<span
 			class="diamond"> <ion-icon name="diamond-outline"></span>
 			</ion-icon></a>
 	</p>
@@ -89,7 +89,7 @@ request.setCharacterEncoding("UTF-8");
 <div class="plmovie">
 	<h3>개봉 예정 영화</h3>
 	<p>
-		<a href="#" class="ranking">1. 부니베어 : 애들이 줄었어요</a>
+		<a href="${contextPath}/movie/movieDetail.do" class="ranking">1. 부니베어 : 애들이 줄었어요</a>
 	</p>
 	<p>
 		<a href="#" class="ranking">2. 매직 스쿨 : 초보마법사</a>
