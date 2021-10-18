@@ -1,0 +1,164 @@
+@charset "EUC-KR";
+
+.join {
+	position : relative;
+	border : 0px solid black;
+	float : left;
+	top : 30px;
+	left : 20px;
+	background-color: white;
+	width : 930px ; 
+	height : 880px;
+}
+
+.fixed_join{
+	font-weight: bold;
+	position : relative;
+	left : 20px;
+	font-size : 13px;
+}
+
+.jointext1{
+	font-weight : number 200;
+	color : gray;
+	font-size: 12px;
+}
+
+#_member_id{
+	position : relative;
+	left : 30px;
+	width: 300px;
+    margin: auto;
+    height : 30px;
+}
+
+#_member_pw{
+	position : relative;
+	left : 30px;
+	width: 300px;
+    margin: auto;
+    height : 30px;
+}
+
+#_member_nama{
+	position : relative;
+	left : 30px;
+	width: 300px;
+    margin: auto;
+    height : 30px;
+}
+
+#idbox{
+	position : relative;
+	top : 20px;
+}
+
+#pwbox {
+ 	position : relative;
+	top : 40px;
+}
+
+#namebox {
+	position : relative;
+	top : 60px;
+}
+
+#sexbox {
+	position : relative;
+	top : 80px;
+}
+
+#brbox {
+	position : relative;
+	top : 100px;
+}
+
+#numbox{
+	position : relative;
+	top : 120px;
+}
+
+#phnumbox{
+	position : relative;
+	top : 140px;
+}
+
+#emailbox{
+	position : relative;
+	top : 160px;
+}
+
+#adbox{
+	position : relative;
+	top : 180px;
+}
+
+
+.ymd {
+	position : relative;
+	left : 30px;
+}
+
+.telcss {
+	position : relative;
+	left : 30px;
+	top : 2px;
+}
+
+.phtelcss{
+	position : relative;
+	left : 30px;
+	top : 9px;
+}
+
+.emailcss{
+	position : relative;
+	left : 30px;
+	top : 18px;
+}
+
+.postcss {
+	position : relative;
+	left : -50px;
+	top : 18px;
+	font-weight: bold;
+	font-size : 13px;
+	
+}
+
+.adcss{
+	position : relative;
+	top : 20px;
+	left : -25px;
+}
+
+.ad2css{
+	position : relative;
+	left : -15px;
+	top : 20px;
+}
+
+#roadAddress{
+	position : relative;
+	top : -3px;
+	left : 30px;
+}
+
+.ad3css {
+	position : relative;
+	top : 16px;
+	border : 0px solid black;
+}
+
+.closejoin{
+	position : relative;
+	top : 200px;
+	border : 0px solid black;
+	left : 250px;
+}
+
+
+
+
+
+

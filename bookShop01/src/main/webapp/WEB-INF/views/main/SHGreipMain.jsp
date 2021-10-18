@@ -8,9 +8,7 @@ request.setCharacterEncoding("UTF-8");
 %>
 
 <div class="bodycolumn">
-	<!-- .card*2 -->
-	<div class="card">
-		<!-- h2+h5+.fakeimg+p*2 -->
+ <div class="bodyclumn1">
 		<h2>오늘의 추천영화</h2>
 		<h5 class="minititle1">당신에게 감동을 주는 영화</h5>
 		<h5 class="minititle2">Best Movie Of 2021</h5>
@@ -41,7 +39,7 @@ request.setCharacterEncoding("UTF-8");
 					<label for="slide3">&nbsp;</label> <label for="slide4">&nbsp;</label>
 				</div>
 			</div>
-		</div>
+			</div>
 	</div>
 	<div class="newshead">
 		<h2>뉴스</h2>

@@ -4,7 +4,7 @@
  	position : relative;
     width: 250px;
     top : 10px;
-
+    
     background-color: #f1f1f1;
 
  }
@@ -25,8 +25,8 @@
 
  .login {
     background-color: white;
-    height: 210px;
-    border : 1px solid black;
+    height: 250px;
+    border : 0px solid black;
  }
 
  .login2 {
