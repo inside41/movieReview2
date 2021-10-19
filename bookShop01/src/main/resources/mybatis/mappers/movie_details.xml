@@ -23,7 +23,7 @@
 		<result property="change_date" column="change_date" />
 	</resultMap>
 
-	<select id="selectMovieRanking" resultMap="movieResult">
+	<select id="selectMovieRanking" resultMap="movieResult" >
 	    <![CDATA[
 			SELECT * FROM 
 				(SELECT * FROM movie_details 
@@ -49,6 +49,15 @@
 				 ORDER BY releasedate DESC)
 			WHERE ROWNUM <= 5
 			 
+		]]>
+	</select>
+	
+	<select id="selectSolt" resultMap="movieResult" parameterType="String">
+	    <![CDATA[
+	    	SELECT * FROM 
+				(SELECT * FROM movie_details
+ 				ORDER BY #{soltValue} DESC)
+				WHERE ROWNUM <= 6
 		]]>
 	</select>
 

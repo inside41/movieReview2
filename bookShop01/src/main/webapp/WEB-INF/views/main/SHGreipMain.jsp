@@ -14,8 +14,8 @@ request.setCharacterEncoding("UTF-8");
 		<h5 class="minititle2">Best Movie Of 2021</h5>
 		<div class="fakeimg" style="height: 200px">
 
-			<span class="tinyimg"> <a href="#"><img
-					src="${contextPath}/resources/img/assemble.gif" alt="몰라"
+			<span class="tinyimg"> <a href="${contextPath}/main/movieDetail.do?id=${movieFreshScore[0].movie_id}"><img
+					src="${contextPath}/resources/img/${movieFreshScore[5].poster}" alt="몰라"
 					class="naver"></a>
 			</span>
 
@@ -25,14 +25,13 @@ request.setCharacterEncoding("UTF-8");
 					name="slide" id="slide3"> <input type="radio" name="slide"
 					id="slide4">
 				<ul id="imgholder" class="imgs">
-					<li class="chaeyoung"><a href="#"><img
-							src="${contextPath}/resources/img/chae.gif"></a></li>
-					<li class="sana"><a href="#"><img
-							src="${contextPath}/resources/img/sana.gif"></a></li>
-					<li class="bbobbbo"><a href="#"><img
-							src="${contextPath}/resources/img/bbobbo.gif"></a></li>
-					<li class="dog"><a href="#"><img
-							src="${contextPath}/resources/img/dog.gif"></a></li>
+					<c:forEach var="list" items="${movieFreshScore}">
+						<li class="chaeyoung">
+							<a href="${contextPath}/main/movieDetail.do?id=${list.movie_id}">
+								<img src="${contextPath}/resources/img/${list.poster}">
+							</a>
+						</li>
+					</c:forEach>
 				</ul>
 				<div class="bullets">
 					<label for="slide1">&nbsp;</label> <label for="slide2">&nbsp;</label>

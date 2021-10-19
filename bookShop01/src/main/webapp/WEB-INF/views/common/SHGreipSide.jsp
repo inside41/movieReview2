@@ -58,7 +58,7 @@ request.setCharacterEncoding("UTF-8");
 			<h3>박스오피스 순위</h3>
 			<c:forEach var="list" items="${movieRankingList}">
 				<p>
-					<a href="#" class="ranking">${list.ko_title}
+					<a href="${contextPath}/main/movieDetail.do?id=${list.movie_id}" class="ranking">${list.ko_title}
 						<span class="diamond"> 
 							<ion-icon name="diamond-outline"></ion-icon>
 						</span>
@@ -71,7 +71,7 @@ request.setCharacterEncoding("UTF-8");
 			<h3>개봉 예정 영화</h3>
 			<c:forEach var="list" items="${movieReleaseList}">
 				<p>
-					<a href="#" class="ranking">${list.ko_title}</a>
+					<a href="${contextPath}/main/movieDetail.do?id=${list.movie_id}" class="ranking">${list.ko_title}</a>
 				</p>
 			</c:forEach>
 		</div>

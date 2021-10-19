@@ -48,9 +48,11 @@ public class MainController extends BaseController {
 		session.setAttribute("side_menu", "user");
 		ModelAndView mav = new ModelAndView();
 		
-		mav.addObject("movieRankingList",movieService.searchMovieRanking());
-		mav.addObject("movieReleaseList",movieService.searchMovieRelease());
+		//∑©≈∑ π◊ ∞≥∫¿øπ¡§øµ»≠ µ•¿Ã≈Õ √ÎµÊ
+		searchMRAndMR(mav);
+		
 		mav.addObject("movieTrailer", movieService.searchTrailer());
+		mav.addObject("movieFreshScore",movieService.searchsolt("fresh_score"));
 		
 		mav.setViewName("/main/main");
 		return mav;
@@ -59,6 +61,8 @@ public class MainController extends BaseController {
 	@RequestMapping(value= "/main/minhotest.do" ,method={RequestMethod.POST,RequestMethod.GET})
 	public ModelAndView minhotest(HttpServletRequest request, HttpServletResponse response) throws Exception{
 		ModelAndView mav = new ModelAndView();
+		//∑©≈∑ π◊ ∞≥∫¿øπ¡§øµ»≠ µ•¿Ã≈Õ √ÎµÊ
+		searchMRAndMR(mav);
 		mav.setViewName("/main/test");
 		return mav;
 	}
@@ -66,6 +70,8 @@ public class MainController extends BaseController {
 	@RequestMapping(value= "/main/movieDetail.do" ,method={RequestMethod.POST,RequestMethod.GET})
 	public ModelAndView movieDetail(HttpServletRequest request, HttpServletResponse response) throws Exception{
 		ModelAndView mav = new ModelAndView();
+		//∑©≈∑ π◊ ∞≥∫¿øπ¡§øµ»≠ µ•¿Ã≈Õ √ÎµÊ
+		searchMRAndMR(mav);
 		mav.setViewName("/main/movieDetail");
 		return mav;
 	}
