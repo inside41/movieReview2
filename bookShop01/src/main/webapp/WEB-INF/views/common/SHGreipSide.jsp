@@ -77,27 +77,4 @@ request.setCharacterEncoding("UTF-8");
 		</div>
 	</div>
 </form>
-		<div class="card">
-			<h3>박스오피스 순위</h3>
-			<c:forEach var="list" items="${movieRankingList}">
-				<p>
-					<a href="#" class="ranking">${list.ko_title}
-						<span class="diamond"> 
-							<ion-icon name="diamond-outline"></ion-icon>
-						</span>
-					</a>
-				</p>
-			</c:forEach>
-		</div>
-		<!-- .card>h3+p -->
-		<div class="plmovie">
-			<h3>개봉 예정 영화</h3>
-			<c:forEach var="list" items="${movieReleaseList}">
-				<p>
-					<a href="#" class="ranking">${list.ko_title}</a>
-				</p>
-			</c:forEach>
-		</div>
-</div>
-</form>
 

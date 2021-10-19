@@ -16,7 +16,7 @@
 <link href="${contextPath}/resources/css/SHheader.css" rel="stylesheet" type="text/css">
 <link href="${contextPath}/resources/css/SHfooter.css" rel="stylesheet" type="text/css">
 <link href="${contextPath}/resources/css/SHside.css" rel="stylesheet" type="text/css">
-<link href="${contextPath}/resources/css/SHjoin.css?after" rel="stylesheet" type="text/css">
+<link href="${contextPath}/resources/css/SHjoin.css" rel="stylesheet" type="text/css">
 <link href="${contextPath}/resources/css/SHcss2.css" rel="stylesheet" type="text/css">
 <link href="${contextPath}/resources/css/SHtrailer.css" rel="stylesheet" type="text/css">
 <script src="${contextPath}/resources/jquery/jquery-1.6.2.min.js" type="text/javascript"></script>
