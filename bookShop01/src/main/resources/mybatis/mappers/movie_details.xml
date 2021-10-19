@@ -8,7 +8,7 @@
 		<result property="movie_id" column="movie_id" />
 		<result property="ko_title" column="ko_title" />
 		<result property="en_title" column="en_title" />
-		<result property="tailer" column="tailer" />
+		<result property="trailer" column="trailer" />
 		<result property="poster" column="poster" />
 		<result property="releasedate" column="releasedate" />
 		<result property="rating" column="rating" />

@@ -30,7 +30,4 @@ public class newsController extends BaseController{
 		mav.setViewName("/news/news");
 		return mav;
 	}
-	
-	
-	
 }

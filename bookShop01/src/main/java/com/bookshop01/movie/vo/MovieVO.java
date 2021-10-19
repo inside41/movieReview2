@@ -39,11 +39,11 @@ public class MovieVO {
 	public void setKo_title(String ko_title) {
 		this.ko_title = ko_title;
 	}
-	public String getTailer() {
+	public String getTrailer() {
 		return trailer;
 	}
-	public void setTailer(String tailer) {
-		this.trailer = tailer;
+	public void setTrailer(String trailer) {
+		this.trailer = trailer;
 	}
 	public String getReleasedate() {
 		return releasedate;

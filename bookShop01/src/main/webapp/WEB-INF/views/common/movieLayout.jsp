@@ -56,7 +56,7 @@
 	});
 	
 	// /007시작/
-	function showPopup(hasFilter, th, url) {
+	function showPopup(hasFilter, trailerUrl) {
 		const popup = document.querySelector('#doubleopopup');
 		if (hasFilter) {
 			popup.classList.add('has-filter');
@@ -66,7 +66,7 @@
 		popup.classList.remove('doubleohide');
 
 		var popupLink = document.getElementById('pop');
-		popupLink.src = url;
+		popupLink.src = trailerUrl;
 	}
 	
 	function closePopup() {

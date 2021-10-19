@@ -99,10 +99,10 @@ request.setCharacterEncoding("UTF-8");
 			<figure class="doubleozoom">
 				<img class="doubleo"
 					src="${contextPath}/resources/img/${list.poster}" alt="007"
-					onclick="showPopup(true, 1 , ${list.trailer})">
+					onclick="showPopup(true, '${list.trailer}')">
 			</figure>
 			<span class="doubleoplay"> <ion-icon
-					onclick="showPopup(true, 1 ,${list.trailer})
+					onclick="showPopup(true, '${list.trailer}')"
 					name="play-circle-outline"></ion-icon>
 			</span>
 		</c:forEach>
