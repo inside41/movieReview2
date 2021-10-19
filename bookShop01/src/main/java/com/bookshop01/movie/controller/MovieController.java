@@ -35,6 +35,15 @@ public class MovieController extends BaseController{
 		return mav;
 	}
 	
+	@RequestMapping(value="/movietrailer.do" ,method = RequestMethod.POST)
+	public ModelAndView movieTrailer(@RequestParam Map<String, String> loginMap,
+			                  HttpServletRequest request, HttpServletResponse response) throws Exception {
+		ModelAndView mav = new ModelAndView();
+		
+		
+		return mav;
+	}
+	
 	//DB »Æ¿Œ
 //	memberVO=memberService.login(loginMap);
 //	if(memberVO!= null && memberVO.getMember_id()!=null){

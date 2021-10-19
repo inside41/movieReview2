@@ -41,5 +41,15 @@
 			 
 		]]>
 	</select>
+	
+	<select id="selectTrailer" resultMap="movieResult">
+	    <![CDATA[
+	    	SELECT * FROM 
+				(SELECT * FROM movie_details
+				 ORDER BY releasedate DESC)
+			WHERE ROWNUM <= 5
+			 
+		]]>
+	</select>
 
 </mapper>

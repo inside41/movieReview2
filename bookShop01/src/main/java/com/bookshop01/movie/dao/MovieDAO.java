@@ -22,6 +22,11 @@ public class MovieDAO {
 		List<MovieVO> movieReleaseDate = (ArrayList) sqlSession.selectList("mapper.movie.selectReleaseMovie");
 		return movieReleaseDate;
 	}
+	
+	public List<MovieVO> selectTrailer() throws DataAccessException{
+		List<MovieVO> movieTrailerList = (ArrayList) sqlSession.selectList("mapper.movie.selectTrailer");
+		return movieTrailerList;
+	}
 }
 
 

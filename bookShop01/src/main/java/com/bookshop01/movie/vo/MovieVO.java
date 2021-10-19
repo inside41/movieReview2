@@ -7,7 +7,7 @@ public class MovieVO {
 	private String movie_id;
 	private String ko_title;
 	private String en_title;
-	private String tailer;
+	private String trailer;
 	private String poster;
 	private String releasedate;
 	private String rating;
@@ -40,10 +40,10 @@ public class MovieVO {
 		this.ko_title = ko_title;
 	}
 	public String getTailer() {
-		return tailer;
+		return trailer;
 	}
 	public void setTailer(String tailer) {
-		this.tailer = tailer;
+		this.trailer = tailer;
 	}
 	public String getReleasedate() {
 		return releasedate;

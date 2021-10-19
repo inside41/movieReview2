@@ -50,6 +50,7 @@ public class MainController extends BaseController {
 		
 		mav.addObject("movieRankingList",movieService.searchMovieRanking());
 		mav.addObject("movieReleaseList",movieService.searchMovieRelease());
+		mav.addObject("movieTrailer", movieService.searchTrailer());
 		
 		mav.setViewName("/main/main");
 		return mav;

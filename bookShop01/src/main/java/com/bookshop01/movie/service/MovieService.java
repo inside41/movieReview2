@@ -26,4 +26,8 @@ public class MovieService {
 	public List<MovieVO> searchMovieRelease() throws Exception{
 		return movieDAO.selectReleaseDate();
 	}
+	
+	public List<MovieVO> searchTrailer() throws Exception{
+		return movieDAO.selectTrailer();
+	}
 }
