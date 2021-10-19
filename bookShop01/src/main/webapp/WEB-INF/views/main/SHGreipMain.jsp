@@ -8,7 +8,7 @@ request.setCharacterEncoding("UTF-8");
 %>
 
 <div class="bodycolumn">
- <div class="bodyclumn1">
+	<div class="bodyclumn1">
 		<h2>오늘의 추천영화</h2>
 		<h5 class="minititle1">당신에게 감동을 주는 영화</h5>
 		<h5 class="minititle2">Best Movie Of 2021</h5>
@@ -39,38 +39,41 @@ request.setCharacterEncoding("UTF-8");
 					<label for="slide3">&nbsp;</label> <label for="slide4">&nbsp;</label>
 				</div>
 			</div>
-			</div>
+		</div>
 	</div>
 	<div class="newshead">
 		<h2>뉴스</h2>
 
 		<div class="news" style="height: 250px">
-         <a href="#"><img class="newsimg"
-            src="${contextPath}/resources/img/tajja.jpg" alt="타WKd"></a>
-      </div>
+			<a href="#"><img class="newsimg"
+				src="${contextPath}/resources/img/tajja.jpg" alt="타WKd"></a>
+		</div>
 		<div class="news2" style="height: 250px">
 			<p>
-				<a href="${contextPath}/news/news.do?newsTitle=article_news_001" class="news2p">&nbsp <strong>'베놈
-						2' 쿠키 영상까지 봐야 하는 이유</strong>
+				<a href="${contextPath}/news/news.do?newsTitle=article_news_001"
+					class="news2p">&nbsp <strong>'베놈 2' 쿠키 영상까지 봐야 하는 이유</strong>
 				</a>
 			</p>
 			<p>
-				<a href="${contextPath}/news/news.do?newsTitle=article_news_002" class="news2p">&nbsp <strong>'007 노 타임 투
-						다이' 2주연속 1위</strong></a>
+				<a href="${contextPath}/news/news.do?newsTitle=article_news_002"
+					class="news2p">&nbsp <strong>'007 노 타임 투 다이' 2주연속 1위</strong></a>
 			</p>
 			<p>
-				<a href="${contextPath}/news/news.do?newsTitle=article_news_003" class="news2p">&nbsp <strong>최장기 007에 바치는
-						헌사 '노 타임 투 다이'</strong></a>
+				<a href="${contextPath}/news/news.do?newsTitle=article_news_003"
+					class="news2p">&nbsp <strong>최장기 007에 바치는 헌사 '노 타임 투
+						다이'</strong></a>
 			</p>
 			<p>
-				<a href="${contextPath}/news/news.do?newsTitle=article_news_004" class="news2p">&nbsp <strong>부산국제영화제 찾은 최민식</strong></a>
+				<a href="${contextPath}/news/news.do?newsTitle=article_news_004"
+					class="news2p">&nbsp <strong>부산국제영화제 찾은 최민식</strong></a>
 			</p>
 			<p>
-				<a href="${contextPath}/news/news.do?newsTitle=article_news_005" class="news2p">&nbsp <strong>제26회 부산국제영화제
-						개막식</strong></a>
+				<a href="${contextPath}/news/news.do?newsTitle=article_news_005"
+					class="news2p">&nbsp <strong>제26회 부산국제영화제 개막식</strong></a>
 			</p>
 			<p>
-				<a href="${contextPath}/news/news.do?newsTitle=article_news_006" class="news2p">&nbsp <strong>부산국제영화제 참석한</strong></a>
+				<a href="${contextPath}/news/news.do?newsTitle=article_news_006"
+					class="news2p">&nbsp <strong>부산국제영화제 참석한</strong></a>
 			</p>
 
 		</div>
@@ -92,52 +95,19 @@ request.setCharacterEncoding("UTF-8");
 	<div class="post">
 
 		<!-- 베놈 트레일러 시작 -->
-		<figure class="doubleozoom">
-			<img class="doubleo" src="${contextPath}/resources/img/venom.jpg"
-				alt="007" onclick="showPopup(true, 1)">
-		</figure>
-		<span class="doubleoplay"> <ion-icon onclick="showPopup(true)"
-				name="play-circle-outline"></ion-icon>
-		</span>
-
-		<!-- 베놈 트레일러 끝 -->
-
-		<!-- 007 트레일러 시작 -->
-		<figure class="doubleozoom">
-			<img class="doubleo" src="${contextPath}/resources/img/007.jpg"
-				alt="007" onclick="showPopup(true, 2)">
-		</figure>
-		<span class="doubleoplay"> <ion-icon onclick="showPopup(true)"
-				name="play-circle-outline"></ion-icon>
-		</span>
-
-		<!-- 007 트레일러 끝 -->
-
-		<figure class="doubleozoom">
-			<img class="doubleo" src="${contextPath}/resources/img/nowayhome.jpg"
-				alt="007" onclick="showPopup(true, 3)">
-		</figure>
-		<span class="doubleoplay"> <ion-icon onclick="showPopup(true)"
-				name="play-circle-outline"></ion-icon>
-		</span>
+		<c:forEach var="list" items="${movieTrailer}">
+			<figure class="doubleozoom">
+				<img class="doubleo"
+					src="${contextPath}/resources/img/${list.poster}" alt="007"
+					onclick="showPopup(true, '${list.trailer}')">
+			</figure>
+			<span class="doubleoplay"> <ion-icon
+					onclick="showPopup(true, '${list.trailer}')"
+					name="play-circle-outline"></ion-icon>
+			</span>
+		</c:forEach>
 
 
-		<figure class="doubleozoom">
-			<img class="doubleo" src="${contextPath}/resources/img/dune.jpg"
-				alt="007" onclick="showPopup(true, 4)">
-		</figure>
-		<span class="doubleoplay"> <ion-icon onclick="showPopup(true)"
-				name="play-circle-outline"></ion-icon>
-		</span>
-
-
-		<figure class="doubleozoom">
-			<img class="doubleo" src="${contextPath}/resources/img/matrix_re.jpg"
-				alt="007" onclick="showPopup(true, 5)">
-		</figure>
-		<span class="doubleoplay"> <ion-icon onclick="showPopup(true)"
-				name="play-circle-outline"></ion-icon>
-		</span>
 
 		<div id="doubleopopup" class="doubleohide">
 			<div class="doubleocontent">

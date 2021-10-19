@@ -58,7 +58,7 @@
 	});
 	
 	// /007시작/
-	function showPopup(hasFilter, th) {
+	function showPopup(hasFilter, trailerUrl) {
 		const popup = document.querySelector('#doubleopopup');
 		if (hasFilter) {
 			popup.classList.add('has-filter');
@@ -68,19 +68,7 @@
 		popup.classList.remove('doubleohide');
 
 		var popupLink = document.getElementById('pop');
-
-		if (th == 1) {
-			popupLink.src = "http://www.youtube.com/embed/-FmWuCgJmxo";
-		} else if (th == 2) {
-			popupLink.src = "https://www.youtube.com/embed/PSpgQfVbMXA";
-		} else if (th == 3) {
-			popupLink.src = "https://www.youtube.com/embed/W7edvITC9g4";
-		} else if (th == 4) {
-			popupLink.src = "https://www.youtube.com/embed/-5Dc8EMVYBo";
-		} else if (th == 5) {
-			popupLink.src = "https://www.youtube.com/embed/yEPgqn5f1uk";
-		}
-
+		popupLink.src = trailerUrl;
 	}
 	
 	function closePopup() {
