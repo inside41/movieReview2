@@ -16,7 +16,7 @@ request.setCharacterEncoding("UTF-8");
 
 <div class="topnav">
 	<a href="${contextPath}/member/shmoviemain.do">detail</a> 
-	<a href="#">Link</a> 
+	<a href="${contextPath}/main/movieDetail.do">영화세부</a> 
 	<a href="#">Link</a> 
 	<a href="#">Link</a>
 	<div class="search">

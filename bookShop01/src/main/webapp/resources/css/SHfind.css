@@ -1,0 +1,36 @@
+@charset "EUC-KR";
+
+.findid {
+	position: relative;
+	width: 930px;
+	top: 60px;
+	background-color: white;
+	border : 0px solid black;
+	left : 270px;
+	height: 670px;
+}
+
+.findid1{
+	position : relative;
+	left : -150px;
+	font-size : 12px;
+	color : gray;
+	top : -20px ;
+	border : 0px solid black;
+}
+
+.findid2{
+	border : 0px solid black;
+	position : relative;
+	left : -100px;
+}
+
+.findid3 {
+	position : relative;
+	top : 10px;
+}
+
+.findid4{
+	position : relative;
+	top : 10px;
+}

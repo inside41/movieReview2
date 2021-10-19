@@ -1,0 +1,29 @@
+@charset "EUC-KR";
+
+.aologin{
+	position: relative;
+	width: 930px;
+	top: 60px;
+	background-color: white;
+	border : 0px solid black;
+	left : 270px;
+	height: 670px;
+}
+
+.aologin2{
+	position: relative;
+	border : 1px solid black;
+	left : -70px;
+}
+
+.fixed_join1 {
+	position: relative;
+	border : 0px solid black;
+	left : -30px;
+}
+
+.aologin3 {
+	position: relative;
+	border : 0px solid black;
+	left : -90px;
+}

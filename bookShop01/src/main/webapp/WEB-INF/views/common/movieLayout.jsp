@@ -17,8 +17,10 @@
 <link href="${contextPath}/resources/css/SHfooter.css" rel="stylesheet" type="text/css">
 <link href="${contextPath}/resources/css/SHside.css" rel="stylesheet" type="text/css">
 <link href="${contextPath}/resources/css/SHjoin.css" rel="stylesheet" type="text/css">
+<link href="${contextPath}/resources/css/SHfind.css" rel="stylesheet" type="text/css">
+<link href="${contextPath}/resources/css/SHloginForm.css" rel="stylesheet" type="text/css">
 <link href="${contextPath}/resources/css/SHcss2.css" rel="stylesheet" type="text/css">
-<link href="${contextPath}/resources/css/SHtrailer.css" rel="stylesheet" type="text/css">
+<link href="${contextPath}/resources/css/SHcss2.css" rel="stylesheet" type="text/css">
 <script src="${contextPath}/resources/jquery/jquery-1.6.2.min.js" type="text/javascript"></script>
 <script src="${contextPath}/resources/jquery/jquery.easing.1.3.js" type="text/javascript"></script>
 <script src="${contextPath}/resources/jquery/stickysidebar.jquery.js" type="text/javascript"></script>
