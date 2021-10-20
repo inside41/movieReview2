@@ -36,6 +36,8 @@ public class MemberControllerImpl extends BaseController implements MemberContro
 	public ModelAndView login(@RequestParam Map<String, String> loginMap,
 			                  HttpServletRequest request, HttpServletResponse response) throws Exception {
 		ModelAndView mav = new ModelAndView();
+		//랭킹 및 개봉예정영화 데이터 취득
+		searchMRAndMR(mav);
 		
 		//입력받은 비밀번호 와 salt 취득
 		String password = loginMap.get("member_pw");
@@ -133,6 +135,8 @@ public class MemberControllerImpl extends BaseController implements MemberContro
 		response.setContentType("text/html; charset=UTF-8");
 		request.setCharacterEncoding("utf-8");
 		ModelAndView mav = new ModelAndView();
+		//랭킹 및 개봉예정영화 데이터 취득
+		searchMRAndMR(mav);
 		try {
 			String searchValue = request.getParameter("searchValue");
 			_memberVO.setEmail2(_memberVO.getEmail2().replace(",", ""));
@@ -223,6 +227,8 @@ public class MemberControllerImpl extends BaseController implements MemberContro
 	@RequestMapping(value = "/shmoviemain.do")
 	public ModelAndView SHMovieMain(HttpServletRequest request, HttpServletResponse response) throws Exception{
 		ModelAndView mav = new ModelAndView();
+		//랭킹 및 개봉예정영화 데이터 취득
+		searchMRAndMR(mav);
 		mav.setViewName("/main/SHMovieMain");
 		return mav;
 	}

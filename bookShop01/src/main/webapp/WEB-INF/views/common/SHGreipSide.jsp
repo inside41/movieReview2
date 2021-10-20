@@ -37,6 +37,7 @@ request.setCharacterEncoding("UTF-8");
 			<c:when
 				test='${memberInfo.member_id == null || memberInfo.member_id == ""}'>
 				<div class="login">
+				<h2 class="login1">&nbsp&nbsp&nbsp&nbspLogin</h2>
 					<div class="makeid">
 						<label for="id"></label> <input class="makeid1" type="text"
 							id="id" name="member_id" placeholder="ID"> <label

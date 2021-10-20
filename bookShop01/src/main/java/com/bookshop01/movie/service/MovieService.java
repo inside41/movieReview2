@@ -30,4 +30,8 @@ public class MovieService {
 	public List<MovieVO> searchTrailer() throws Exception{
 		return movieDAO.selectTrailer();
 	}
+	
+	public List<MovieVO> searchsolt(String str) throws Exception{
+		return movieDAO.selectSolt(str);
+	}
 }
