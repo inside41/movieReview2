@@ -36,10 +36,6 @@
     top: -40px;
 }
 
-.chaeyoung {
-
-}
-
 
 ul.imgs{
     padding: 0;
@@ -369,7 +365,7 @@ transform: scale(1.15);
     background-color: #f1f1f1;
     margin: auto;
     width: 1200px;
-
+	
  }
 
  .header {
@@ -392,12 +388,13 @@ transform: scale(1.15);
 
  .header h1 {
     font-size: 50px;
+    color : blue;
     /* h1이라고 해서 그대로 쓰지 않고 사이즈 지정한다 */
  }
 
  .topnav {
     overflow: hidden;
-    background: #333;
+    background-color: blue;
     width: 1200px;
 
  }
@@ -456,9 +453,10 @@ transform: scale(1.15);
  }
 
  .card {
-    background-color: white;
+    background-color: red;
     padding: 20px;
     margin-top: 20px;
+    
  }
 
  .footer {
@@ -566,3 +564,5 @@ transform: scale(1.15);
     height: 280px;
 
  }
+ 
+

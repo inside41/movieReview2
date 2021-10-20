@@ -11,10 +11,12 @@
  
  .headertext {
  	text-align: center;
+ 	
  }
  
   .header h1 {
     font-size: 50px;
+    color : black;
     /* h1이라고 해서 그대로 쓰지 않고 사이즈 지정한다 */
  }
  

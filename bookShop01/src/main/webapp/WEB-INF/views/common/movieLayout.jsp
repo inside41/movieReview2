@@ -16,6 +16,7 @@
 <link href="${contextPath}/resources/css/SHheader.css" rel="stylesheet" type="text/css">
 <link href="${contextPath}/resources/css/SHfooter.css" rel="stylesheet" type="text/css">
 <link href="${contextPath}/resources/css/SHside.css" rel="stylesheet" type="text/css">
+<link href="${contextPath}/resources/css/SHMovie.css" rel="stylesheet" type="text/css">
 <link href="${contextPath}/resources/css/SHjoin.css" rel="stylesheet" type="text/css">
 <link href="${contextPath}/resources/css/SHfind.css" rel="stylesheet" type="text/css">
 <link href="${contextPath}/resources/css/SHloginForm.css" rel="stylesheet" type="text/css">

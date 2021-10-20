@@ -9,10 +9,6 @@
 
  }
 
-  .login1 {
-    position: relative;
-    top: 10px;
- }
 
  .adv {
     position: relative;
@@ -20,13 +16,28 @@
     top: 20px;
     width: 255px;
     float: right;
-
  }
 
  .login {
     background-color: white;
-    height: 250px;
+    height: 180px;
     border : 0px solid black;
+    position : relative;
+    top : 20px;
+    z-index: 0;
+ }
+ 
+   .login1 {
+    position: relative;
+    top: -3px;
+    z-index: 3;
+    border : 0px solid red;
+    color : black;
+    background-color: white;
+    height: 25px;
+    width : 250px;
+    font-weight: 600;
+    font-size : 20px;
  }
 
  .login2 {
@@ -52,6 +63,22 @@
     left: -10px;
  }
  
+ .makelog {
+ 	position : relative;
+ 	top :-30px;
+ 	background-color: white;
+	color : black;	
+	
+ }
+ 
+ .makelog44 {
+ 	position : relative;
+ 	top : 10px;
+ 	width: 200px;
+ 	left : -10px;
+ 	background-color: white;
+	color : black;	
+ }
  
  .card {
     background-color: white;
@@ -59,11 +86,22 @@
     margin-top: 20px;
  }
  
+ .ranking{
+ 	position : relative;
+ 	top : 20px;
+ 	background-color: white;
+ 	float: left;
+ 	border : 0px solid black;
+ 	width : 250px;
+ 	padding: 20px;
+    margin-top: 20px;
+ }
  
- .ranking {
+ .ranking1 {
     text-decoration-line: none;
     color: black;
     font-size: 15px;
+    
  }
  
  .diamond {
@@ -78,5 +116,63 @@
     padding: 20px;
     margin-top: 20px;
     height: 280px;
-
+    position : relative;
+    float: left;
+	width : 250px;
+	top : 20px;
  }
+ 
+ #logbutton{
+	position : relative;
+ 	background-color: white;
+	color : black;	
+ 	font-size: 15px;
+ 	border-radius: 4px;
+ 	width: 115px;
+ }
+ 
+.알림{
+	left : -30px;
+}
+
+.내글현황{
+	left : 95px;
+	top : -24px;
+}
+ 
+ .쪽지{
+	left : -30px;
+	top : -20px;
+	position : relative;
+ 	background-color: white;
+	color : black;	
+ 	font-size: 15px;
+ 	border-radius: 4px;
+ 	width: 115px;
+}
+ 
+ .스크랩{
+	left : 95px;
+	top : -44px;
+}
+ 
+ .정보수정{
+	left : -30px;
+	top : -40px;
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

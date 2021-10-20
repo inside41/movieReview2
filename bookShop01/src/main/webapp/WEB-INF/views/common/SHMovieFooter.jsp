@@ -11,4 +11,3 @@ request.setCharacterEncoding("UTF-8");
    <div class="footer">
       <h2>Footer</h2>
    </div>
-   </div>
